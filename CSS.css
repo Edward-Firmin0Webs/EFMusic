@@ -1,0 +1,149 @@
+*{
+/*Browser = 2.12*/
+font-family:		corbel;
+border: 			0;
+padding: 			0;
+margin:				0;
+}
+
+
+#left {
+width: 				25%;
+height:				100%;
+margin-left: 		0%;
+background-color: 	#444;
+position:			fixed;
+-moz-animation:		Enter_Borders_Left 3s 1;
+/*animaiton-delay:*/
+
+}
+
+#right {
+width: 				25%;
+height: 			100%;
+margin-left:		75%;
+background-color: 	#444;
+position:			fixed;
+-moz-animation:		Enter_Borders_Right 3s 1 ;
+}
+
+
+#home{
+margin-left: 40%;
+font-size:   200%;
+-moz-animation:		Enter_Title_Top 3s 1;
+
+
+}	
+
+img{
+-moz-animation-name:		Enter_Borders;
+-moz-animation-duration:	5s;
+	
+}
+
+/* Animation ----- Keyframes*/
+
+@keyframes Enter_Borders_Left{
+	from {margin-left: -25%;}
+	to       {margin-left : 0%;}
+}
+
+@keyframes Enter_Borders_Right{
+	from  {margin-left: 100%;}
+	to         {margin-left: 75%;}
+}
+
+@keyframes Enter_Title_Top
+{
+	from {margin-top: 20%;}
+	to   {margin-top: 0%;}
+	
+}
+
+@keyframes Enter_Music_Pictures
+{
+	0% {opacity: 0;}
+	50%      {opacity: 0;}
+	100% {opacity:0.8;}
+}
+
+/* Send Albums to the left when clicked*/
+
+#music_holder
+{
+	height:35%;
+	width: 35%;
+	margin-left: 28%;
+	margin-top:  5%;
+	-moz-animation: Enter_Music_Pictures 2s;
+	
+}
+
+#music_holder p{
+	margin-left: 400px;
+	margin-top: -290px;
+	position: absolute;
+	z-index:5000;
+}
+
+#music_holder p:hover
+{
+	background-color: #CDAB9E;
+}
+
+
+
+#Music_1{
+	
+	height:  300px;
+	width:   300px;
+	padding-bottom: 40px;
+	-moz-animation: Enter_Music_Pictures 2s;
+	
+}
+
+#Play_Button{
+	height:300px;
+	width:300px;
+	z-index: 5010;
+	/*padding-top:-340px;*/
+	margin-top: -380px;
+	position:relative;
+	visibility:hidden;
+}
+
+#Play_Button:hover{
+	background-color: #AAA;
+	opacity: 0.8;
+	visibility: visible;
+}
+
+#Play_Button_Text{
+	padding-top:100px;
+	text-align: center;
+	font-family:corbel;
+	color:#232323;
+}
+
+#Music_2, #Music_3
+{
+	/*music_2 = 1.33
+	  music_1 = 1.008
+	  music_3 = 1.33
+	*/
+		
+	height:300px;
+	Width: 300px;
+	-moz-animation: Enter_Music_Pictures 2s;
+	position:relataive;
+	padding-bottom: 40px;
+	
+}
+
+/*#Music_2{
+	
+	padding-left: 50%;
+	margin-top:  -40%;
+	margin-left: 20%;
+}*/
